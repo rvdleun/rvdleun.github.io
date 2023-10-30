@@ -1,27 +1,6 @@
-# React + TypeScript + Vite
+# Curriculum Vitae - Ruben van der Leun
+Because I got a bit too sick of trying to get Microsoft Word to properly format any template that I had when writing my CV, I decided to to generate the document via React. It might be a bit overdone, but I have to admit it felt a bit more comfortable to do it like this.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+All the content is stored in src/data.tsx. This is to make it more easy for me to add or update content when needed. For now, the CV is in English, but I have added some code in advance to also be able to show it in Dutch. Most of the approaches are homebrew, due to this meaning to be a fairly simple web page and I didn't want to overcomplicate things.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+... so yeah, I'm available for a new assignment on the 1st of January 2024. If you know or see anything, please let me know. :)
