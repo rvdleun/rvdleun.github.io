@@ -1,6 +1,7 @@
 import Category from "../../components/Category";
 import FieldValue from "../../components/FieldValue";
 import Header from "../../components/Header";
+import Paragraphs from "../../components/Paragraphs";
 import Text from "../../components/Text";
 import { Data } from "../../data";
 
@@ -12,7 +13,7 @@ const Experiences = () => {
             <Header value={experience.organisationTitle!} dateRange={experience.dateRange} />
             <div className="mb-2"><FieldValue field={{ en: "Title", nl: "Functietitel" }} value={experience.workTitle} /></div>
             <div className="mb-2"><FieldValue field={{ en: "Used skills & expertise:", nl: "Gebruikte vaardigheden en expertise:" }} value={experience.usedSkillsAndExpertise.join(", ")} /></div>
-            { experience.description.map(paragraph => <p className="mb-2" key={paragraph}>{ paragraph }</p>)}
+            <Paragraphs value={experience.description} />
         </div>)}
         <p className="mt-12 mb-2 italic"><Text value={moreExperience} /></p>
     </Category>

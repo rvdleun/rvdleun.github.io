@@ -2,6 +2,7 @@ import Category from "../../components/Category";
 import FieldValue from "../../components/FieldValue";
 import { Data } from "../../data";
 import portrait from "../../assets/portrait.png";
+import Paragraphs from "../../components/Paragraphs";
 
 
 const AboutMe = () => {
@@ -29,16 +30,16 @@ const AboutMe = () => {
                     <div className="mb-2">
                         <FieldValue field={{ nl: "Burgerlijke staat", en: "Martial status"}} value={aboutMe.maritalStatus} />
                     </div>
-                    <div className="mb-2">
-                        <FieldValue field={{ en: "Recently used skills & expertise:", nl: "Meest recente gebruikte vaardigheden en expertise:" }} value={aboutMe.recentUsedSkillsAndExpertise.join(", ")} />
-                    </div>
                 </div>
                 <div>
                     <img className="w-40" src={portrait} />
                 </div>
             </div>
             <div>
-                { aboutMe.description.map(line => <p key={line} className="mb-2">{line}</p>) }
+                <div className="mb-2">
+                    <FieldValue field={{ en: "Recently used skills & expertise:", nl: "Meest recente gebruikte vaardigheden en expertise:" }} value={aboutMe.recentUsedSkillsAndExpertise.join(", ")} />
+                </div>
+                <Paragraphs value={aboutMe.description} />
             </div>
         </Category>
     </div>
