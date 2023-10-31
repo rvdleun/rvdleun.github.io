@@ -7,9 +7,9 @@ interface HeaderProps {
     dateRange?: { end: string, start: string }
 }
 
-const Header: FC<HeaderProps> = ({ dateRange, value }) => <div className="flex px-2 justify-between bg-black text-white">
+const Header: FC<HeaderProps> = ({ dateRange, value }) => <div className="flex px-2 justify-between bg-dark text-white">
     <p><Text value={value} /></p>
-    { dateRange && <DateRange {...dateRange} />}
+    { dateRange && <div className="max-sm:hidden"><DateRange {...dateRange} /></div>}
 </div>;
 
 export default Header;

@@ -9,7 +9,7 @@ export const PersonalProjects = () => {
         { personalProjects.map(project => <div key={project.title} className="mb-8">
             <Header value={project.title} />
             <p className="italic mb-4">{ project.href }</p>
-            { project.description.map(paragraph => <p className="mb-2">{ paragraph }</p>)}
+            { project.description.map(paragraph => <p key={paragraph} className="mb-2">{ paragraph }</p>)}
         </div>)}
     </Category>
 

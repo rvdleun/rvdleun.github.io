@@ -38,7 +38,7 @@ const AboutMe = () => {
                 </div>
             </div>
             <div>
-                { aboutMe.description.map(line => <p className="mb-2">{line}</p>) }
+                { aboutMe.description.map(line => <p key={line} className="mb-2">{line}</p>) }
             </div>
         </Category>
     </div>

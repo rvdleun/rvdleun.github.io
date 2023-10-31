@@ -6,7 +6,7 @@ export const SpareTime = () => {
     const { spareTime } = Data;
 
     return <Category title={{ en: "Spare time", nl: "Vrije tijd" }}>
-        { spareTime.map(activity => <div className="mb-4">
+        { spareTime.map(activity => <div key={activity.title} className="mb-4">
             <p><Field value={activity.title} /></p>
             <p>{activity.description}</p>
         </div>)}
