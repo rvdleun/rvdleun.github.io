@@ -4,16 +4,18 @@ import { Avatar } from "./components/Avatar.tsx";
 import { Canvas } from "@react-three/fiber";
 import { ARButton, useXR, XR } from "@react-three/xr";
 import { AboutMe } from "./sections/AboutMe.tsx";
+import { Experiences } from "./sections/Experiences.tsx";
+import { PersonalProjects } from "./sections/PersonalProjects.tsx";
 
 const SceneContent: FC = () => {
   const { isPresenting } = useXR();
 
   return (
-    <group position={[0, 0, isPresenting ? -1.5 : 0]}>
+    <group position={[0, isPresenting ? 0 : -1.2, -1.5]}>
       <ambientLight />
-      <OrbitControls />
+      <OrbitControls minDistance={0.1} maxDistance={0.1} />
       <Avatar />
-      <AboutMe />
+      <PersonalProjects />
     </group>
   );
 };

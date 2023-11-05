@@ -10,10 +10,16 @@ export const getParagraphsFromSelectedLanguage = (paragraphs: {
   return paragraphs[selectedLanguage];
 };
 
-export const getTextFromSelectedLanguage = (text: {
-  en: string;
-  nl: string;
-}) => {
+export const getTextFromSelectedLanguage = (
+  text:
+    | {
+        en: string;
+        nl: string;
+      }
+    | string,
+) => {
+  if (typeof text === "string") return text;
+
   const selectedLanguage = getSelectedLanguage();
   return text[selectedLanguage];
 };
