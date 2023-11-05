@@ -1,14 +1,16 @@
 import { FC } from "react";
-import Text, { TextContent } from "./Text.tsx"
+import Text, { TextContent } from "./Text.tsx";
 import Field from "./Field.tsx";
 
 interface FieldValueProps {
-    field: TextContent;
-    value: TextContent;
+  field: TextContent;
+  value: TextContent;
 }
 
-const FieldValue: FC<FieldValueProps> = ({ field, value }) =><p>
+const FieldValue: FC<FieldValueProps> = ({ field, value }) => (
+  <p>
     <Field value={field} />: <Text value={value} />
-</p>
+  </p>
+);
 
 export default FieldValue;
