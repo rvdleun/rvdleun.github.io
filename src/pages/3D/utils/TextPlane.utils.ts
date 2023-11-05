@@ -49,7 +49,7 @@ const generateParagraph = (text: string, fontSize: number) => {
 };
 
 export interface TextPlaneSettings {
-  fontSize: "medium" | "large";
+  fontSize?: "medium" | "large";
   text: string;
 }
 export const generateTextPlane = (
@@ -59,7 +59,7 @@ export const generateTextPlane = (
   if (!context) return null;
 
   const data = paragraphs.map(({ fontSize, text }) =>
-    generateParagraph(text, fontSize === "medium" ? 24 : 64),
+    generateParagraph(text, fontSize === "large" ? 32 : 24),
   );
 
   const height = data.reduce((acc, { lines, fontSize }) => {

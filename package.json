@@ -15,11 +15,13 @@
     "@react-three/drei": "^9.79.3",
     "@react-three/fiber": "^8.13.5",
     "@react-three/postprocessing": "^2.15.0",
+    "@react-three/xr": "^5.7.1",
     "@readyplayerme/visage": "^4.12.0",
     "@types/three": "^0.158.1",
     "postprocessing": "^6.32.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.18.0",
     "suspend-react": "^0.1.3",
     "three": "^0.154.0",
     "three-stdlib": "^2.23.13"

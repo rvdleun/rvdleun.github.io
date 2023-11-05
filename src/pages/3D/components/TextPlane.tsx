@@ -1,23 +1,29 @@
-import { FC, useEffect, useState } from "react";
+import { FC, useEffect, useRef, useState } from "react";
 import {
   generateBackgroundPlane,
   generateTextPlane,
   TextPlaneSettings,
 } from "../utils/TextPlane.utils.ts";
-import { useLoader } from "@react-three/fiber";
 import { TextureLoader } from "three/src/loaders/TextureLoader";
-import { Texture } from "three";
+import { Group, Texture } from "three";
+import { useXR } from "@react-three/xr";
+import { useFrame, useThree } from "@react-three/fiber";
 
 export const TextPlane: FC<{ paragraphs: TextPlaneSettings[] }> = ({
   paragraphs,
 }) => {
-  const [backgroundMap, setBackgroundMap] = useState<string | null>(null);
+  const containerRef = useRef<Group>(new Group());
+
+  const [backgroundMap, setBackgroundMap] = useState<Texture>(null);
   const [widthHeight, setWidthHeight] = useState<[number, number]>([0, 0]);
   const [textMap, setTextMap] = useState<Texture>(null);
 
+  const { camera } = useThree();
+  const { isPresenting, player } = useXR();
+
   useEffect(() => {
     async function loadMaps() {
-      const { height, src, width } = generateTextPlane(paragraphs);
+      const { height, src, width } = generateTextPlane(paragraphs)!;
 
       setBackgroundMap(
         await new TextureLoader().loadAsync(
@@ -25,26 +31,34 @@ export const TextPlane: FC<{ paragraphs: TextPlaneSettings[] }> = ({
         ),
       );
       setTextMap(await new TextureLoader().loadAsync(src));
-      setWidthHeight([width / 10, height / 10]);
+      setWidthHeight([width / 500, height / 500]);
     }
 
     loadMaps();
   }, [paragraphs]);
 
-  // console.log(src, paragraphs);
+  useFrame(() => {
+    if (!containerRef) {
+      return;
+    }
 
-  console.log(textMap);
-  if (!textMap) {
+    const lookAt = isPresenting ? player.children[0] : camera;
+    containerRef.current!.lookAt(lookAt.position);
+  });
+
+  if (!backgroundMap || !textMap) {
     return null;
   }
 
   return (
-    <group>
-      <mesh position={[0, 0, -0.1]}>
-        <planeGeometry args={widthHeight.map((xy) => xy * 1.1)} />
+    <group ref={containerRef}>
+      <mesh position={[0, 0, -0.015]}>
+        <planeGeometry
+          args={widthHeight.map((xy) => xy * 1.1) as [number, number]}
+        />
         <meshBasicMaterial map={backgroundMap} transparent />
       </mesh>
-      <mesh>
+      <mesh position={[0.015, -0.05, 0.015]}>
         <planeGeometry args={widthHeight} />
         <meshBasicMaterial map={textMap} transparent />
       </mesh>
