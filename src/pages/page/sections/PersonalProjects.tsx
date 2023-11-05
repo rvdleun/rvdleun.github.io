@@ -1,7 +1,7 @@
-import Category from "../../components/Category";
-import Header from "../../components/Header";
-import Paragraphs from "../../components/Paragraphs";
-import { Data } from "../../data"
+import Category from "../components/Category.tsx";
+import Header from "../components/Header.tsx";
+import Paragraphs from "../components/Paragraphs.tsx";
+import { Data } from "../../../data.ts"
 
 export const PersonalProjects = () => {
     const { personalProjects } = Data;

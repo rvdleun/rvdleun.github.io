@@ -1,6 +1,6 @@
 import { FC } from "react";
-import Text, { TextContent } from "./Text";
-import DateRange from "./DateRange";
+import Text, { TextContent } from "./Text.tsx";
+import DateRange from "./DateRange.tsx";
 
 interface HeaderProps {
     value: TextContent;

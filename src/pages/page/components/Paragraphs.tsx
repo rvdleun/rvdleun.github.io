@@ -1,5 +1,5 @@
 import { FC } from "react"
-import { getSelectedLanguage } from "../utils/selected-language";
+import { getSelectedLanguage } from "../../../utils/selected-language.ts";
 
 export type ParagraphsContent = { en: string[], nl: string[] } | string[];
 

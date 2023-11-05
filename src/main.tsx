@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Page from './page/Page.tsx'
+import Page from './pages/page/Page.tsx'
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

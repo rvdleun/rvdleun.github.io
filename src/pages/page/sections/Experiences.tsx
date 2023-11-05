@@ -1,9 +1,9 @@
-import Category from "../../components/Category";
-import FieldValue from "../../components/FieldValue";
-import Header from "../../components/Header";
-import Paragraphs from "../../components/Paragraphs";
-import Text from "../../components/Text";
-import { Data } from "../../data";
+import Category from "../components/Category.tsx";
+import FieldValue from "../components/FieldValue.tsx";
+import Header from "../components/Header.tsx";
+import Paragraphs from "../components/Paragraphs.tsx";
+import Text from "../components/Text.tsx";
+import { Data } from "../../../data.ts";
 
 const Experiences = () => {
     const { experiences, moreExperience } = Data;

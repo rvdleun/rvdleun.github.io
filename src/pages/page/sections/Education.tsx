@@ -1,6 +1,6 @@
-import Category from "../../components/Category";
-import Header from "../../components/Header";
-import { Data } from "../../data";
+import Category from "../components/Category.tsx";
+import Header from "../components/Header.tsx";
+import { Data } from "../../../data.ts";
 
 const Education = () => {
     const { education } = Data;

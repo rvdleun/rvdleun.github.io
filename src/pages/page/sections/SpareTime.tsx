@@ -1,7 +1,7 @@
-import Category from "../../components/Category";
-import Field from "../../components/Field";
-import Text from "../../components/Text";
-import { Data } from "../../data"
+import Category from "../components/Category.tsx";
+import Field from "../components/Field.tsx";
+import Text from "../components/Text.tsx";
+import { Data } from "../../../data.ts"
 
 export const SpareTime = () => {
     const { spareTime } = Data;

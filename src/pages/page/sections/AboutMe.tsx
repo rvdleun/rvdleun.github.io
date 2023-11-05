@@ -1,8 +1,8 @@
-import Category from "../../components/Category";
-import FieldValue from "../../components/FieldValue";
-import { Data } from "../../data";
-import portrait from "../../assets/portrait.png";
-import Paragraphs from "../../components/Paragraphs";
+import Category from "../components/Category.tsx";
+import FieldValue from "../components/FieldValue.tsx";
+import { Data } from "../../../data.ts";
+import portrait from "../assets/portrait.png";
+import Paragraphs from "../components/Paragraphs.tsx";
 
 
 const AboutMe = () => {

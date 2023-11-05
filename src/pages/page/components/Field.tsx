@@ -1,5 +1,5 @@
 import { FC } from "react";
-import Text, { TextContent } from "./Text"
+import Text, { TextContent } from "./Text.tsx"
 
 interface FieldProps {
     value: TextContent;

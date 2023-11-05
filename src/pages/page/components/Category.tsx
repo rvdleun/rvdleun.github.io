@@ -1,5 +1,5 @@
 import { FC, PropsWithChildren } from "react";
-import Text, { TextContent } from "./Text";
+import Text, { TextContent } from "./Text.tsx";
 
 interface CategoryProps extends PropsWithChildren {
     title: TextContent;
