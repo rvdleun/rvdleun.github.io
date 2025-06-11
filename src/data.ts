@@ -45,6 +45,32 @@ export const Data = {
   },
   experiences: [
     {
+      organisationTitle: "Schiphol Group, Schiphol",
+      workTitle: "Full-Stack Developer",
+      dateRange: {
+        end: "Current",
+        start: "2024-01-01",
+      },
+      description: {
+        en: [
+          "I joined the PXP Platform team to contribute to the ongoing development of an airport kiosk system. These kiosks assist passengers with accessing real-time flight and airport information, as well as initiating live video calls with support agents when needed.",
+          "My responsibilities included implementing new features and updating existing ones based on feedback and requests from our clients, in collaboration with UX designers. A significant portion of my time was dedicated to stabilizing the video calling functionality—Travor Conversations—to ensure it was reliable and production-ready.",
+          "In addition to feature development, the team worked on maintaining a modern and healthy codebase. This involved regular refactoring, upgrading dependencies, and aligning the platform with the latest industry standards and best practices."
+        ],
+        nl: [
+          "Ik was onderdeel van het PXP Platform-team om bij te dragen aan de verdere ontwikkeling van een kiosksysteem voor luchthavens. Deze kiosken helpen passagiers bij het opvragen van realtime vlucht- en luchthaveninformatie en bieden de mogelijkheid om live videogesprekken met supportmedewerkers te starten.",
+          "Mijn verantwoordelijkheden bestonden uit het implementeren van nieuwe functionaliteiten en het aanpassen van bestaande onderdelen op basis van feedback en verzoeken van onze klanten, in samenwerking met UX-designers. Een groot deel van mijn tijd besteedde ik aan het stabiel maken van de videogespreksfunctionaliteit—Travor Conversations—zodat deze betrouwbaar en klaar voor productie was.",
+          "Naast de functionele ontwikkeling werkte het team aan het onderhouden van een moderne en gezonde codebase. Dit omvatte regelmatige refactoring, het updaten van afhankelijkheden en het afstemmen van het platform op de meest recente industriestandaarden en best practices."
+        ]
+      },
+      usedSkillsAndExpertise: [
+        "React",
+        "NextJS",
+        "Strapi",
+        "Twilio"
+      ],
+    },
+    {
       organisationTitle: "KLM, Schiphol",
       workTitle: "Frontend Developer",
       dateRange: {
@@ -108,6 +134,7 @@ export const Data = {
         "WebRTC",
         "MediaSoup",
         "Github Actions",
+        "Strapi"
       ],
     },
     {
@@ -288,6 +315,13 @@ export const Data = {
       },
     },
     {
+      title: "Self-Hosting",
+      description: {
+        en: "After setting up a NUC as a home server, I became passionate about self-hosting with Proxmox. I run various open-source services like Home Assistant, FreshRSS, and Immich, exploring automation, system management, and privacy-first tools.",
+        nl: "Na het opzetten van een NUC als home server raakte ik enthousiast over zelfhosting met Proxmox. Ik beheer diverse open-source diensten zoals Home Assistant, FreshRSS en Immich, en verdiep me in automatisering en privacygerichte tools.",
+      },
+    },
+    {
       title: {
         en: "Pets",
         nl: "Huisdieren",
@@ -307,8 +341,8 @@ export const Data = {
     {
       title: "AI Tools",
       description: {
-        en: "I find myself spending a large amount of time playing around with creating images in Midjourney or having conversations with ChatGPT while on walks. Next to that, I've also been experimenting with using the ChatGPT AI.",
-        nl: "Ik merk dat ik een groot deel van mijn tijd besteed aan het spelen met het maken van afbeeldingen in Midjourney of aan het converseren met ChatGPT tijdens wandelingen. Daarnaast heb ik ook geëxperimenteerd met het gebruik van de ChatGPT AI.",
+        en: "I enjoy exploring AI in a hands-on way—often generating images with Midjourney or chatting with ChatGPT during walks. I also build personal tools like a personal assistant and a podcast generator using a self-hosted Ollama instance.",
+        nl: "Ik verken AI op een praktische manier—van het genereren van beelden met Midjourney tot gesprekken met ChatGPT tijdens wandelingen. Daarnaast ontwikkel ik persoonlijke tools, zoals een persoonlijke assistent en een podcastgenerator, op een zelfgehoste Ollama-instantie.",
       },
     },
     {
