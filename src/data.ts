@@ -55,19 +55,46 @@ export const Data = {
         en: [
           "I joined the PXP Platform team to contribute to the ongoing development of an airport kiosk system. These kiosks assist passengers with accessing real-time flight and airport information, as well as initiating live video calls with support agents when needed.",
           "My responsibilities included implementing new features and updating existing ones based on feedback and requests from our clients, in collaboration with UX designers. A significant portion of my time was dedicated to stabilizing the video calling functionality, Travor Conversations, to ensure it was reliable and production-ready.",
-          "In addition to feature development, the team worked on maintaining a modern and healthy codebase. This involved regular refactoring, upgrading dependencies, and aligning the platform with the latest industry standards and best practices."
+          "In addition to feature development, the team worked on maintaining a modern and healthy codebase. This involved regular refactoring, upgrading dependencies, and aligning the platform with the latest industry standards and best practices.",
         ],
         nl: [
           "Ik was onderdeel van het PXP Platform-team om bij te dragen aan de verdere ontwikkeling van een kiosksysteem voor luchthavens. Deze kiosken helpen passagiers bij het opvragen van realtime vlucht- en luchthaveninformatie en bieden de mogelijkheid om live videogesprekken met supportmedewerkers te starten.",
           "Mijn verantwoordelijkheden bestonden uit het implementeren van nieuwe functionaliteiten en het aanpassen van bestaande onderdelen op basis van feedback en verzoeken van onze klanten, in samenwerking met UX-designers. Een groot deel van mijn tijd besteedde ik aan het stabiel maken van de videogespreksfunctionaliteit—Travor Conversations—zodat deze betrouwbaar en klaar voor productie was.",
-          "Naast de functionele ontwikkeling werkte het team aan het onderhouden van een moderne en gezonde codebase. Dit omvatte regelmatige refactoring, het updaten van afhankelijkheden en het afstemmen van het platform op de meest recente industriestandaarden en best practices."
-        ]
+          "Naast de functionele ontwikkeling werkte het team aan het onderhouden van een moderne en gezonde codebase. Dit omvatte regelmatige refactoring, het updaten van afhankelijkheden en het afstemmen van het platform op de meest recente industriestandaarden en best practices.",
+        ],
+      },
+      usedSkillsAndExpertise: ["React", "NextJS", "Strapi", "Twilio"],
+    },
+    {
+      organisationTitle: "360Fabriek, Rotterdam",
+      workTitle: "Developer (Part-time)",
+      dateRange: {
+        end: "present",
+        start: "2025-01-01",
+      },
+      description: {
+        en: [
+          "I was asked to return to 360Fabriek to help maintain and improve existing projects, set up an Azure environment to ensure that several projects are available worldwide, and led an effort to introduce the first LLM-powered projects.",
+          "For XR Academy, I improved the maintainability of the code by moving everything into a monorepo, cleaning up the codebase, and setting up a CMS system using Strapi to maintain content.",
+          "With the help of Trojan Monkeys, I built Lisa, an AI chatbot deployed in TUI shops that helps customers with their initial questions about their planned trip before they get forwarded to an agent on the premises. Using Heygen's interactive feature and speech-to-text, customers are able to talk directly to the AI.",
+          "In addition, I also worked on several small prototypes and proof-of-concepts involving LLMs and Splat models.",
+        ],
+        nl: [
+          "Ik werd gevraagd om terug te keren naar 360Fabriek om bestaande projecten te onderhouden en te verbeteren, een Azure-omgeving op te zetten om ervoor te zorgen dat verschillende projecten wereldwijd beschikbaar zijn, en was verantwoordelijk voor het introduceren van de eerste LLM-aangedreven projecten.",
+          "Voor XR Academy heb ik de onderhoudbaarheid van de code verbeterd door alles naar een monorepo te verplaatsen, de codebase op te schonen en een CMS-systeem op te zetten met behulp van Strapi om content te beheren.",
+          "Met de hulp van Trojan Monkeys heb ik Lisa gebouwd, een AI-chatbot die in TUI-winkels is geïmplementeerd en klanten helpt met hun eerste vragen over hun geplande reis voordat ze worden doorverwezen naar een medewerker ter plaatse. Met behulp van Heygen's interactieve functie en spraak-naar-tekst kunnen klanten direct met de AI praten.",
+          "Daarnaast heb ik ook gewerkt aan verschillende kleine prototypes en proof-of-concepts met LLMs en Splat-modellen.",
+        ],
       },
       usedSkillsAndExpertise: [
         "React",
-        "NextJS",
+        "React-Three-Fiber",
+        "Three.js",
+        "NestJS",
+        "Github Actions",
         "Strapi",
-        "Twilio"
+        "Azure",
+        "Heygen",
       ],
     },
     {
@@ -134,7 +161,7 @@ export const Data = {
         "WebRTC",
         "MediaSoup",
         "Github Actions",
-        "Strapi"
+        "Strapi",
       ],
     },
     {
@@ -248,6 +275,18 @@ export const Data = {
     },
   ],
   personalProjects: [
+    {
+      title: "RSS-Feeds-To-Podcast",
+      href: "https://github.com/rvdleun/rss-feeds-to-podcast",
+      description: {
+        en: [
+          "Because I would often get stuck in the hallway before walks with my dogs trying to find the right media to listen to, I've created a pipeline that uses the RSS feeds I follow to create a podcast every day, entirely focused on my interests.",
+        ],
+        nl: [
+          "Omdat ik vaak vastzat in de gang voordat ik met mijn honden ging wandelen, op zoek naar de juiste podcast om naar te luisteren, heb ik een pipeline gemaakt die de RSS-feeds gebruikt die ik volg om dagelijks een podcast te creëren die volledig gericht is op mijn interesses.",
+        ],
+      },
+    },
     {
       title: "RogueSaber",
       href: "https://roguesaber.rvdleun.com/",
