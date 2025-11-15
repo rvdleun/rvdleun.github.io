@@ -48,13 +48,13 @@ export const Data = {
       organisationTitle: "Schiphol Group, Schiphol",
       workTitle: "Full-Stack Developer",
       dateRange: {
-        end: "Current",
+        end: "present",
         start: "2024-01-01",
       },
       description: {
         en: [
           "I joined the PXP Platform team to contribute to the ongoing development of an airport kiosk system. These kiosks assist passengers with accessing real-time flight and airport information, as well as initiating live video calls with support agents when needed.",
-          "My responsibilities included implementing new features and updating existing ones based on feedback and requests from our clients, in collaboration with UX designers. A significant portion of my time was dedicated to stabilizing the video calling functionality—Travor Conversations—to ensure it was reliable and production-ready.",
+          "My responsibilities included implementing new features and updating existing ones based on feedback and requests from our clients, in collaboration with UX designers. A significant portion of my time was dedicated to stabilizing the video calling functionality, Travor Conversations, to ensure it was reliable and production-ready.",
           "In addition to feature development, the team worked on maintaining a modern and healthy codebase. This involved regular refactoring, upgrading dependencies, and aligning the platform with the latest industry standards and best practices."
         ],
         nl: [

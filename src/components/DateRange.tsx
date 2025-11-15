@@ -11,7 +11,7 @@ interface DateRangeProps {
 }
 
 const DateRange: FC<DateRangeProps> = ({ end, start }) => {
-    return <p>{parseDate(start)} - {parseDate(end)}</p>
+    return <p>{parseDate(start)} - {end === 'present' ? 'Present' : parseDate(end)}</p>
 }
 
 export default DateRange;
